@@ -1,0 +1,20 @@
+php artisan make:model Company -m
+// common function
+php artisan make:model Utils
+
+php artisan make:migration add_currency --table=companies
+
+widgets 
+this week sales 
+today sales 
+finacial period sales and loses
+
+employees number of employees
+stock categories topsalleing,
+sub categories- runing out of stock, best and worsed
+rescent stock items (list)
+recent salespecentange of sales by week(list) 
+stock category by % (piechart)
+
+
+
