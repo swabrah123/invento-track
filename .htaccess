@@ -4,6 +4,8 @@
     </IfModule>
 
     RewriteEngine On
+    #exclude directory from rewritng
+    RewriteRule ^(public/) - [L]
 
     RewriteCond %{REQUEST_FILENAME} -d [OR]
     RewriteCond %{REQUEST_FILENAME} -f
@@ -14,5 +16,5 @@
 
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ server.php
+    RewriteRule ^ index.php
 </IfModule>
